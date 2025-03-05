@@ -6,3 +6,6 @@ archcreds.json
 
 # Ignore any iso files or iso signature files
 *.iso*
+
+# Ignore archinstall folder which is the unzipped 3.0.2 repository
+archinstall/
