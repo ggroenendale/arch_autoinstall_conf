@@ -69,7 +69,7 @@ I am still unsure between clipman and cliphist which one is best, because cliphi
 clipboard but with clipman I at least found a simple config to tie it with fuzzel. wl-clip-persist extends the
 history for the clipboard to include stuff even if an application closes.
 
-### Browser
+### Browser -> Thorium
 
 This decision was more in the realm of what is performant and privacy focused but also helps me as a web app
 developer. So far I am looking at Librewolf for the privacy focus and I also like Thorium. I may also install Zen
@@ -103,14 +103,18 @@ and move to a different Linux distro.
 
 ### Process
 
+---
+
 How this works is we begin with an Arch ISO that we will modify before running the scripts in this repository
-and installing some of its requirements, namely python 3.12 and the 3.0.2 version of archinstall from their git
+and installing some of its requirements, namely `python 3.12` and the 3.0.2 version of `archinstall` from their git
 repository.
 
-However we first need to begin with archiso as that is what we will use to modify the ISO to begin with in order
+However we first need to begin with `archiso` as that is what we will use to modify the ISO to begin with in order
 to automate the rest of the process.
 
 ### Pre-Installation
+
+---
 
 To begin with, we will start with an Arch ISO and load it onto a Ventoy USB. Ventoy is a tool that can store
 several ISO's onto a USB drive that you can then choose from when you boot from that USB. The idea being that
@@ -147,7 +151,24 @@ sudo sh Ventoy2Disk.sh -i /dev/sdc
 From here, the Ventoy usb should be available to add files onto from your machine. I created a folder for my
 ArchLinux iso and additional files.
 
+```
+Ventoy-USB/
+├── ventoy/
+│   └── ventoy.json
+├── ArchLinux/
+│   ├── InstallScripts/
+│   │   └── setup.sh
+│   ├── archlinux-version-x86_64.iso
+│   └── archlinux-version-x86_64.iso.sig
+└── Debian/
+    ├── InstallScripts/
+    │   └── setup.sh
+    └── debian-version-amd64-DVD-1.iso
+```
+
 ### Installation
+
+---
 
 #### Archiso install
 
