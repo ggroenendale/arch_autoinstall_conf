@@ -1,1 +1,8 @@
+# Ignore Python Virtual Environment
 .venv
+
+# Ignore credentials file
+archcreds.json
+
+# Ignore any iso files or iso signature files
+*.iso*
