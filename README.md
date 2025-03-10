@@ -22,58 +22,96 @@ Python and installing the newer version and removing the older version somehow b
 
 But we will cross that bridge when or if we get to it.
 
-### Terminal -> Wezterm
+#### Terminal -> Wezterm
 
 Wezterm is my preferred terminal. I like that it is customizable in lua which is just a delightful easy language.
 
-### Window Manager -> Hyprland
+#### Window Manager -> Hyprland
 
 Hyprland is the goat and I am excited to get into customizing it.
 
-### App Launcher -> Fuzzel or Walker
+#### App Launcher -> Fuzzel or Walker
 
 I decided to go with fuzzel. It's wayland native which should jive well with Hyprland which also depends on
 Wayland. It can also be customized using a fuzzel.ini file in `.config/fuzzel`. I've also been looking at Walker
 which seems to have more recent development and might be less resource intensive. I am not sure yet.
 
-### Authentication Agent -> hyprpolkitagent
+#### Authentication Agent -> hyprpolkitagent
 
 The thing that pops up when you need to authenticate something.
 
-### File Manager -> Thunar
+#### File Manager -> Thunar
 
 I'm not real sure on File Managers. I know that I'm not super satisfied with Nautilus and Dolphin seems like its
 a bit too heavy for what I need. Thunar also seems pretty extensible so I think for now we will go with that.
 
-### Panels, System Tray, & Widgets -> Waybar & Eww
+#### Panels, System Tray, & Widgets -> Waybar & Eww
 
 Waybar is also Wayland based and works with Hyprland and Fuzzel. I'm also including Eww as well for custom
 widgets.
 
-### Notifications -> Mako
+#### Notifications -> Mako
 
 Seen this recommended a couple times for notifications.
 
-### Settings & System Configuration -> Several
+#### Settings & System Configuration -> Several
 
 I first want to note `xdg-desktop-portal-hyprland` and I will explain more about what it does another time
 
-### Wallpaper -> swww
+#### Wallpaper -> swww
 
 It seems to have the most customization and I think it supports animated wallpapers. Also seems to make it easy
 to switch wallpapers or write a script that changes them.
 
-### Clipboard -> clipman + wl-clip-persist
+#### Clipboard -> clipman + wl-clip-persist
 
 I am still unsure between clipman and cliphist which one is best, because cliphist is able to copy images to the
 clipboard but with clipman I at least found a simple config to tie it with fuzzel. wl-clip-persist extends the
 history for the clipboard to include stuff even if an application closes.
 
-### Browser -> Thorium
+### Browser -> LibreWolf + Zen Browser
 
 This decision was more in the realm of what is performant and privacy focused but also helps me as a web app
 developer. So far I am looking at Librewolf for the privacy focus and I also like Thorium. I may also install Zen
 browser depending on if I want something that is quiet and nice to use.
+
+After some testing I found LibreWolf to be faster than Thorium on Ubuntu 22.04. I found Thorium to be a bit
+buggy with some graphical errors. It may be some configuration issues or some miscommunication with Nvidia.
+But for simplicity I am going to stick with LibreWolf.
+
+I also tested Zen browser and I really like it. I could see using Zen browser as a replacement for installing
+the Spotify Linux app or other desktop apps.
+
+### Development tools
+
+#### Neovim
+
+#### k3s
+
+#### kdash
+
+### Other Packages
+
+This will mostly serve as a space for me to remember all of the tools that I use and dump some things from my brain.
+
+A list of packages I need to install that are particularly necessary as libraries or installers
+
+- cargo
+- nvm
+- npm
+- nodejs
+- helm
+- gem
+- ruby-full
+- stow
+- fd-find
+- ripgrep
+- luarocks
+- libparted-dev
+- Spark
+- Zot (OCI Container registry)
+- Podman
+- gawk (makes bash config editing scripts work)
 
 ## Installation
 
